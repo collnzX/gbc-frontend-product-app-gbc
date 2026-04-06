@@ -3,7 +3,7 @@ const statusMessage = document.getElementById("statusMessage");
 const refreshBtn = document.getElementById("refreshBtn");
 
 // Replace this with your real Function URL
-const apiUrl = "beckend-functionapp-gbc-cyhadbheeyazgben.canadacentral-01.azurewebsites.net";
+const apiUrl = "https://beckend-functionapp-gbc-cyhadbheeyazgben.canadacentral-01.azurewebsites.net/api/getProducts";
 
 async function loadProducts() {
     productGrid.innerHTML = "";
