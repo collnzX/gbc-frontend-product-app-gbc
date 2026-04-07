@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Product App | Products</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">Azure Product App</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="architecture.html">Architecture</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-header">
+        <div>
+          <p class="eyebrow">Live Data</p>
+          <h1>Products</h1>
+          <p class="lead-small">This page loads product data from your Azure Function and Azure SQL database.</p>
+        </div>
+        <button id="refreshBtn" class="btn btn-primary">Refresh</button>
+      </div>
+
+      <div class="toolbar">
+        <input id="searchInput" type="text" placeholder="Search products by name..." />
+        <div class="status-box">
+          <span id="statusMessage">Loading products...</span>
+        </div>
+      </div>
+
+      <div class="summary-cards">
+        <div class="summary-card">
+          <span class="summary-label">Total Products</span>
+          <span id="productCount" class="summary-value">0</span>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Source</span>
+          <span class="summary-value">Azure Function</span>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Database</span>
+          <span class="summary-value">Azure SQL</span>
+        </div>
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Product data is served through a serverless Azure backend.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>
