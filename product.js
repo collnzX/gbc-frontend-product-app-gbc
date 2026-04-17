@@ -4,7 +4,7 @@ const refreshBtn = document.getElementById("refreshBtn");
 const searchInput = document.getElementById("searchInput");
 const productCount = document.getElementById("productCount");
 
-const apiUrl = "beckend-functionapp-gbc-cyhadbheeyazgben.canadacentral-01.azurewebsites.net";
+const apiUrl = APP_CONFIG.apiUrl;
 
 let allProducts = [];
 
