@@ -4,7 +4,7 @@ const refreshBtn = document.getElementById("refreshBtn");
 const searchInput = document.getElementById("searchInput");
 const productCount = document.getElementById("productCount");
 
-const apiUrl = "YOUR_REAL_FUNCTION_URL_HERE";
+const apiUrl = APP_CONFIG.apiUrl;
 
 let allProducts = [];
 
