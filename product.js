@@ -17,6 +17,7 @@ function renderProducts(products) {
     return;
   }
 
+  
   products.forEach((product) => {
     const id = product.id ?? product.Id ?? "N/A";
     const name = product.name ?? product.Name ?? "Unnamed";
